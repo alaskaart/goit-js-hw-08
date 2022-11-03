@@ -11,6 +11,7 @@ let objData = { email: '', message: '' };
 
 function onFormSubmit(evt) {
   evt.preventDefault();
+  console.log(objData);
   evt.target.reset();
   localStorage.removeItem(STORAGE_KEY);
 }
