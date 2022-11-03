@@ -26,7 +26,7 @@ function populateTextarea() {
     objData = JSON.parse(JSONData);
     const keys = Object.keys(objData);
     for (const key of keys) {
-      formEl.elements[key].value = savedMessage[key];
+      formEl.elements[key].value = objData[key];
     }
   }
 }
